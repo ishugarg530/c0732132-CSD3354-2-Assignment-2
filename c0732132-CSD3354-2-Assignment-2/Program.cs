@@ -16,7 +16,7 @@ namespace c0732132_CSD3354_2_Assignment_2
         {
             
             public delegate void MyDelegate();
-            void Methodl()
+            void Methodl(int i)
             {
                 
                 Console.WriteLine("Method1");
@@ -29,7 +29,6 @@ namespace c0732132_CSD3354_2_Assignment_2
                 myDelegate();
             }
         }
-
 
     class Program
     {
