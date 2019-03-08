@@ -12,11 +12,6 @@ namespace c0732132_CSD3354_2_Assignment_2
 //March 6, 2019
 
 {
-
-    class Program
-    {
-
-
         public class DelegateExercises
         {
             
@@ -33,6 +28,14 @@ namespace c0732132_CSD3354_2_Assignment_2
                 MyDelegate myDelegate = new MyDelegate(Methodl);
                 myDelegate();
             }
+        }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            DelegateExercises delegateExercises = new DelegateExercises();
+            delegateExercises.Method2();
         }
     }
 }
