@@ -13,7 +13,7 @@ namespace c0732132_CSD3354_2_Assignment_2
 
 {
 
-  
+
     public delegate void MyDelegate();
 
     public class DelegateExcercises
@@ -23,9 +23,9 @@ namespace c0732132_CSD3354_2_Assignment_2
             System.Console.WriteLine(MyDelegate.ToString());
         }
     }
-        
-    
-]
+
+
+}
 
 
 
