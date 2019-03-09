@@ -11,7 +11,6 @@ namespace c0732132_CSD3354_2_Assignment_2
 //Assignment2
 //March 6, 2019
 {
-
     public class program
     {
         public static void Main()
@@ -27,14 +26,15 @@ namespace c0732132_CSD3354_2_Assignment_2
         {
             int Method1(out int i)
             {
-                System.Console.WriteLine("Method1");
-                i = 10;
+
+                i = 100;
+                System.Console.WriteLine("Method1" + i);
                 return 0;
             }
             public void Method3()
             {
                 MyDelegate myDelegate = new MyDelegate(Method1);
-                MyDelegate myDelegate1 = new MyDelegate(Method1);
+                MyDelegate myDelegate1 = null;
                 MyDelegate myDelegate2 = myDelegate + myDelegate1;
                 int intValue;
                 myDelegate2(out intValue);
@@ -44,7 +44,6 @@ namespace c0732132_CSD3354_2_Assignment_2
         }
     }
 }
-
 
 
 
