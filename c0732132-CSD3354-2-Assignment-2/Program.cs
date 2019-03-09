@@ -15,7 +15,7 @@ namespace c0732132_CSD3354_2_Assignment_2
 
     public class Program
     {
-        private static void Main(string[] args)
+        private static void Main()
         {
             DelegateExcercises delegateExcercises = new DelegateExcercises();
             delegateExcercises.Method3();
@@ -24,7 +24,7 @@ namespace c0732132_CSD3354_2_Assignment_2
     }
     public delegate void MyDelegate();
 
-    public class DelegateExcercises : MyDelegate
+    public class DelegateExcercises
     {
         void Method1()
         {
@@ -34,6 +34,7 @@ namespace c0732132_CSD3354_2_Assignment_2
         {
             MyDelegate myDelegate = new MyDelegate(Method1);
             myDelegate();
+            System.Console.WriteLine(myDelegate.ToString());
         }
 
     }
